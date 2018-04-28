@@ -7,7 +7,7 @@
     <version>1.0</version>
     <packaging>jar</packaging>
     <description>TODO</description>
-    <name>${project.groupId}:${project.artifactId}:${project.artifactId}</name>
+    <name>${project.groupId}:${project.artifactId}:${project.version}</name>
     <url>https://github.com/ImaginaryNumb3r/Hephaestus</url>
 
     <properties>
