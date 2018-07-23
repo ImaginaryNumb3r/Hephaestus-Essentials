@@ -7,7 +7,8 @@ import java.util.*;
 /**
  * Creator: Patrick
  * Created: 16.05.2018
- * Purpose:
+ * Purpose: A comparator which compares values that are contained within a finite list.
+ * This comparator can be used as a simple comparator for a custom ordered hierarchy of objects.
  */
 @ToTest
 public class SequenceComparator<T> implements Comparator<T> {

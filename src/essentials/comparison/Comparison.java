@@ -5,12 +5,12 @@ import java.util.Comparator;
 /**
  * @author Patrick
  * @since  20.11.2017
- * @implNote There are several reasons why ComparisonResult is a class and not an integer.<br>
- * A set of fixed int instances are assignable as return values and allow an intuitive use within code.<br>
+ * @implNote There are several reasons why Comparison is a class and not an enum.<br>
+ * A set of fixed int instances are assignable as return values and allow a more readable use within code.<br>
  * As such, they can be used as more readable return types for comparisons.<br>
- * Also enums provide the illusion that only 3 valid comparison results exist in Java.<br>
+ * Also, enums provide the illusion that only 3 valid comparison results exist in Java.<br>
  * In fact, every negative value is considered smaller and every positive number is considered greater.<br>
- * Therefore, it would be wrong to have an enumeration of comparison results encompass only 3 values.
+ * Therefore, it would be wrong to have an enumeration of comparison results that encompass only 3 values.
  */
 public class Comparison {
     public static final int SMALLER = -1;
@@ -47,12 +47,19 @@ public class Comparison {
         return result > 0;
     }
 
-    public static boolean isSmaller(int result){
-        return result < 0;
+    public static boolean isGreaterOrEqual(int result){
+        return result >= 0;
     }
 
     public static boolean isEqual(int result){
         return result == 0;
     }
 
+    public static boolean isSmallerOrEqual(int result){
+        return result <= 0;
+    }
+
+    public static boolean isSmaller(int result){
+        return result < 0;
+    }
 }
