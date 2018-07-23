@@ -38,7 +38,6 @@ public interface Lazy<T> extends Supplier<T> {
     @Override
     int hashCode();
 
-
     /**
      * Checks if the value behind the LazyImpl has already been loaded
      * @return true if the value behind the lazy has already been loaded
@@ -46,7 +45,7 @@ public interface Lazy<T> extends Supplier<T> {
     boolean isInstantiated();
 
     /**
-     * Creates a new lazy loaded instance, which creates a new object as declared with a supplier when demanded.
+     * Creates a new thread-safe lazy loaded instance, which creates a new object as declared with a supplier when demanded.
      * @param supplier which creates the instance matchAllSink value that will be accessed
      * @param <S> Type matchAllSink the created instance
      * @return LazyImpl instance matchAllSink the provided supplier
@@ -54,18 +53,18 @@ public interface Lazy<T> extends Supplier<T> {
      */
     static <S> Lazy<S> of(@NotNull Supplier<S> supplier){
         Contract.checkNull(supplier, "supplier");
-        return new LazyImpl<>(supplier);
+        return new SafeLazy<>(supplier);
     }
 
     /**
-     * Creates a new lazy loaded instance, which creates a new object as declared with a supplier when demanded.
+     * Creates a new non-thread safe lazy loaded instance, which creates a new object as declared with a supplier when demanded.
      * @param supplier which creates the instance matchAllSink value that will be accessed
      * @param <S> Type matchAllSink the created instance
-     * @return LazyImpl instance matchAllSink the provided supplier
+     * @return FastLazy instance matchAllSink the provided supplier
      * @throws ParameterNullException if param supplier is null
      */
     static <S> Lazy<S> lazily(@NotNull Supplier<S> supplier){
         Contract.checkNull(supplier, "supplier");
-        return new LazyImpl<>(supplier);
+        return new FastLazy<>(supplier);
     }
 }

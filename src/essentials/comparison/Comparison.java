@@ -1,4 +1,4 @@
-package essentials.util;
+package essentials.comparison;
 
 import java.util.Comparator;
 
@@ -12,7 +12,7 @@ import java.util.Comparator;
  * In fact, every negative value is considered smaller and every positive number is considered greater.<br>
  * Therefore, it would be wrong to have an enumeration of comparison results encompass only 3 values.
  */
-public class ComparisonResult {
+public class Comparison {
     public static final int SMALLER = -1;
     public static final int EQUAL = 0;
     public static final int GREATER = 1;
@@ -54,4 +54,5 @@ public class ComparisonResult {
     public static boolean isEqual(int result){
         return result == 0;
     }
+
 }

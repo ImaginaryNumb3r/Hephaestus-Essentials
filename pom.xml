@@ -4,7 +4,7 @@
 
     <groupId>Hephaestus</groupId>
     <artifactId>hephaestus-essentials</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.4</version>
     <packaging>jar</packaging>
     <description>TODO</description>
     <name>${project.groupId}:${project.artifactId}:${project.version}</name>
@@ -26,8 +26,16 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-    </repositories>
-
+    </repositories> <!--
+    
+    <distributionManagement>
+        <snapshotRepository>
+            <id>github.com</id>
+            <name>my snapshot repository</name>
+            <url>file:///path/to/snapshot/repo</url>
+        </snapshotRepository>
+    </distributionManagement> -->
+    
     <dependencies>
         <dependency>
             <groupId>org.jetbrains</groupId>
@@ -90,7 +98,7 @@
         <developer>
             <name>Patrick Plieschnegger</name>
             <email>patrick.plieschnegger@gmail.com</email>
-            <organization>None</organization>
+            <organization>ImaginaryNumb3r</organization>
             <organizationUrl>http://www.none.com</organizationUrl>
         </developer>
     </developers>

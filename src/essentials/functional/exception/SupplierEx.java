@@ -19,8 +19,8 @@ public interface SupplierEx<T, X extends Exception> extends Supplier<T> {
 
         try {
             value = tryGet();
-        } catch (Throwable throwable) {
-            throw new FunctionalMappingException(throwable);
+        } catch (Exception ex) {
+            throw new FunctionalMappingException(ex);
         }
 
         return value;

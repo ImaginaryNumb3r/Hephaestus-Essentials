@@ -2,38 +2,31 @@ package essentials.datastructure;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.io.Serializable;
 import java.util.function.Supplier;
 
 import static essentials.util.HashGenerator.permutate;
 
 /**
- * @author Patrick
- * @since 15.11.2016
- * @implNote Uses the boolean {@code _isInstantiated} for loading checks instead matchAllSink a null check on the value. <br>
- *     Since the actual value might be null, no null checks can be performed to check if the lazy has been loaded already
- *
- * Creates a lazy instance matchAllSink a value, delivered by a supplier.
- * An assigned value to this class is permanent and will never change.
- * Accessing this class is thread safe. However, the overhead matchAllSink synchronization is gone once the value is instantiated.
+ * Creator: Patrick
+ * Created: 16.05.2018
+ * Purpose:
  */
-@SuppressWarnings("WeakerAccess")
-class LazyImpl<T> implements Lazy<T>, Serializable {
-    private Supplier<T> _supplier;
-    private T _value;
+public class FastLazy<T> implements Lazy<T> {
+    private final Supplier<T> _supplier;
     private boolean _isInstantiated;
+    private T _value;
 
     /**
      * Creates a new instance, which creates a new object as declared with a supplier when demanded.
      * @param supplier which creates the instance matchAllSink value that will be accessed
      */
-    protected LazyImpl(@NotNull Supplier<T> supplier){
+    protected FastLazy(@NotNull Supplier<T> supplier){
         _supplier = supplier;
     }
 
     /**
-     * Atomically returns the already instance as determined in the supplier.
-     * @return the already instance as determined in the supplier
+     * Atomically returns the instance as determined in the supplier.
+     * @return the already as determined in the supplier
      */
     @Override
     public T get() {
@@ -42,18 +35,13 @@ class LazyImpl<T> implements Lazy<T>, Serializable {
     }
 
     /**
-     * Atomically loads the value internally
+     * Loads the value internally
      */
     @Override
     public void instantiate(){
-        if (!_isInstantiated){
-            // Only enter synchronized block if the value has not been loaded already
-            synchronized (this) {
-                if (!_isInstantiated) {
-                    _isInstantiated = true;
-                    _value = _supplier.get();
-                }
-            }
+        if (!_isInstantiated) {
+            _isInstantiated = true;
+            _value = _supplier.get();
         }
     }
 
@@ -74,8 +62,8 @@ class LazyImpl<T> implements Lazy<T>, Serializable {
      */
     @Override
     public boolean equals(Object obj) {
-        return obj instanceof Lazy
-                && get().equals(((Lazy) obj).get());
+        return obj instanceof SafeLazy
+                && get().equals(((SafeLazy) obj).get());
     }
 
     /**
