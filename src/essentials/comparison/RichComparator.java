@@ -16,15 +16,15 @@ public interface RichComparator<T> extends Comparator<T> {
         return compare(val1, val2) <= 0;
     }
 
-    default boolean greater(T val1, T val2) {
-        return compare(val1, val2) > 0;
-    }
-
     default boolean equals(T val1, T val2) {
         return compare(val1, val2) == 0;
     }
 
     default boolean greaterOrEqual(T val1, T val2) {
         return compare(val1, val2) >= 0;
+    }
+
+    default boolean greater(T val1, T val2) {
+        return compare(val1, val2) > 0;
     }
 }
