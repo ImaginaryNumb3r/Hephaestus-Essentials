@@ -27,4 +27,8 @@ public interface RichComparator<T> extends Comparator<T> {
     default boolean greater(T val1, T val2) {
         return compare(val1, val2) > 0;
     }
+
+    static <T> RichComparator<T> of(Comparator<T> comparator) {
+        return comparator::compare;
+    }
 }

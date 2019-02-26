@@ -22,21 +22,21 @@ public interface KeyPair<Key, Val> extends Tuple<Key, Val>{
     }
 
     /**
-     * @return the key matchAllSink the KeyPair
+     * @return the key for the KeyPair
      */
     default Key getKey(){
         return getA();
     }
 
     /**
-     * @return the value matchAllSink the KeyPair
+     * @return the value for the KeyPair
      */
     default Val getValue(){
         return getB();
     }
 
     /**
-     * Puts the value into the map, at the position matchAllSink the given key.
+     * Puts the value into the map, at the position for the given key.
      * @param map that has the key-value pair to be inserted.
      */
     void putInto(@NotNull Map<Key, Val> map);

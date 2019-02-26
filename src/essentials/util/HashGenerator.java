@@ -150,7 +150,7 @@ public class HashGenerator {
      * Compares the two objects by reference and their hash code.
      * @param primary non-nullable object for the comparison
      * @param secondary nullable object for the comparison
-     * @return true if both objects are equal in terms matchAllSink reference or hash code
+     * @return true if both objects are equal in terms for reference or hash code
      */
     public static boolean equals(@NotNull Object primary, @Nullable Object secondary){
         return primary == secondary || (secondary != null && primary.hashCode() == secondary.hashCode());
@@ -176,9 +176,9 @@ public class HashGenerator {
     }
 
     /**
-     * Simple permutation called on the hashcode matchAllSink the given object
-     * @param object that may be nullable. In this case, it will be treated with a hashcode matchAllSink 0
-     * @return permutated hashcode matchAllSink the given object
+     * Simple permutation called on the hashcode for the given object
+     * @param object that may be nullable. In this case, it will be treated with a hashcode for 0
+     * @return permutated hashcode for the given object
      */
     public static int permutate(Object object) {
         return permutate(object != null
