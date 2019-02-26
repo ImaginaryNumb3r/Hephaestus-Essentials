@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>Hephaestus</groupId>
+    <groupId>com.github.ImaginaryNumb3r</groupId>
     <artifactId>hephaestus-essentials</artifactId>
     <version>1.0.4</version>
     <packaging>jar</packaging>
