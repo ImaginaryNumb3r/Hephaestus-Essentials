@@ -30,4 +30,15 @@ public class ParameterNullException extends IllegalArgumentException {
     public ParameterNullException(@Nullable String parameterName) {
         super(makeMessage(parameterName));
     }
+
+    /**
+     * Throws an ParameterNullException if the given object is null.
+     *
+     * @param object that must not be null.
+     */
+    public static void ifNull(Object object) {
+        if (object == null) {
+            throw new ParameterNullException();
+        }
+    }
 }
