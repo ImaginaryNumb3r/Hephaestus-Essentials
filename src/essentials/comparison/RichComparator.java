@@ -31,4 +31,24 @@ public interface RichComparator<T> extends Comparator<T> {
     static <T> RichComparator<T> of(Comparator<T> comparator) {
         return comparator::compare;
     }
+
+    static boolean isSmaller(int i) {
+        return i < 0;
+    }
+
+    static boolean isSmallerOrEqzak(int i) {
+        return i <= 0;
+    }
+
+    static boolean isEqual(int i) {
+        return i == 0;
+    }
+
+    static boolean isGreaterOrEqual(int i) {
+        return i >= 0;
+    }
+
+    static boolean isGreater(int i) {
+        return i > 0;
+    }
 }
