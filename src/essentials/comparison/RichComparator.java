@@ -28,6 +28,11 @@ public interface RichComparator<T> extends Comparator<T> {
         return compare(val1, val2) > 0;
     }
 
+    /**
+     * Creates a RichComparator instance from a Comparator.
+     * @param comparator the original comparator
+     * @return the Rich Comparator.
+     */
     static <T> RichComparator<T> of(Comparator<T> comparator) {
         return comparator::compare;
     }
