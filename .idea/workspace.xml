@@ -7,21 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e6b2481-fe7c-47ef-af3b-72684f1d7edb" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/essentials/contract/ContractTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials/comparison/Comparison.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials/comparison/RichComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials/comparison/RichComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials/contract/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials/contract/Contract.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials/contract/ParameterNullException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials/contract/ParameterNullException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials/datastructure/FastLazy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials/datastructure/FastLazy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials/datastructure/Lazy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials/datastructure/Lazy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials/datastructure/ListIteratorHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials/datastructure/ListIteratorHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials/datastructure/SafeLazy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials/datastructure/SafeLazy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials/functional/PredicateEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials/functional/exception/PredicateEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials/functional/Predicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials/functional/Predicates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials/functional/TriFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials/functional/TriFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials/tuple/KeyPair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials/tuple/KeyPair.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials/tuple/UnitImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials/tuple/UnitImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/essentials/util/HashGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/essentials/util/HashGenerator.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,40 +20,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/essentials/datastructure/Lazy.java">
+        <entry file="file://$PROJECT_DIR$/src/essentials/functional/Predicates.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="62" column="58" lean-forward="true" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/essentials/contract/ParameterNullException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="26" column="91" selection-start-line="26" selection-start-column="91" selection-end-line="26" selection-end-column="91" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/essentials/tuple/UnitImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="59" column="16" selection-start-line="59" selection-start-column="16" selection-end-line="59" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/essentials/contract/Contract.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="166" column="32" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
+            <state relative-caret-position="136">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -74,53 +31,55 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/essentials/util/HashGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="180" column="39" selection-start-line="180" selection-start-column="39" selection-end-line="180" selection-end-column="39" />
+            <state relative-caret-position="323">
+              <caret line="146" column="5" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="n#!!doc;n#DEFAULT_MULTIPLIER_BASE#0;n#HashGenerator#0" />
+                <element signature="n#!!doc;n#HashGenerator#0;n#HashGenerator#0" />
+                <element signature="n#!!doc;n#append#0;n#HashGenerator#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/essentials/tuple/KeyPair.java">
+        <entry file="file://$PROJECT_DIR$/src/essentials/comparison/RichComparator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="38" column="56" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="56" />
+            <state relative-caret-position="595">
+              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+              <folding>
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#844#845#0" expanded="true" />
+                <element signature="e#883#884#0" expanded="true" />
+                <element signature="e#911#912#0" expanded="true" />
+                <element signature="e#950#951#0" expanded="true" />
+                <element signature="e#978#979#0" expanded="true" />
+                <element signature="e#1032#1033#0" expanded="true" />
+                <element signature="e#1061#1062#0" expanded="true" />
+                <element signature="e#1098#1099#0" expanded="true" />
+                <element signature="e#1127#1128#0" expanded="true" />
+                <element signature="e#1089#1090#0" expanded="true" />
+                <element signature="e#1118#1119#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/essentials/functional/TriFunction.java">
+        <entry file="file://$PROJECT_DIR$/src/essentials/contract/Contract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="41" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/essentials/datastructure/ListIteratorHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/essentials/datastructure/FastLazy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="69" column="32" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+            <state relative-caret-position="187">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/essentials/datastructure/SafeLazy.java">
+        <entry file="file://$PROJECT_DIR$/tests/essentials/contract/ContractTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="81" column="40" lean-forward="true" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="40" />
+            <state relative-caret-position="374">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -132,6 +91,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -158,6 +118,7 @@
       <find>matchAllSink</find>
       <find>to the save</find>
       <find>matchallsink</find>
+      <find>checknulls</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Projects\Java\Hephaestus\Hephaestus - Core\Hephaestus - Essentials\Hephaestus-Essentials</dir>
@@ -208,7 +169,6 @@
         <option value="$PROJECT_DIR$/src/essentials/functional/Predicates.java" />
         <option value="$PROJECT_DIR$/src/essentials/functional/exception/BinaryOperatorEx.java" />
         <option value="$PROJECT_DIR$/src/essentials/functional/exception/PredicateEx.java" />
-        <option value="$PROJECT_DIR$/src/essentials/comparison/RichComparator.java" />
         <option value="$PROJECT_DIR$/src/essentials/contract/ParameterNullException.java" />
         <option value="$PROJECT_DIR$/src/essentials/tuple/UnitImpl.java" />
         <option value="$PROJECT_DIR$/src/essentials/contract/Contract.java" />
@@ -219,6 +179,8 @@
         <option value="$PROJECT_DIR$/src/essentials/datastructure/Lazy.java" />
         <option value="$PROJECT_DIR$/src/essentials/datastructure/FastLazy.java" />
         <option value="$PROJECT_DIR$/src/essentials/datastructure/SafeLazy.java" />
+        <option value="$PROJECT_DIR$/src/essentials/comparison/RichComparator.java" />
+        <option value="$PROJECT_DIR$/tests/essentials/contract/ContractTest.java" />
       </list>
     </option>
   </component>
@@ -227,17 +189,12 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Hephaestus:hephaestus-essentials:1.0.4" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="com.github.ImaginaryNumb3r:hephaestus-essentials:1.0" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Hephaestus:hephaestus-essentials:1.0.4" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Hephaestus:hephaestus-essentials:1.0.4" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="com.github.ImaginaryNumb3r:hephaestus-essentials:1.0" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
@@ -267,55 +224,6 @@
               <item name="Hephaestus-Essentials" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Hephaestus-Essentials" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hephaestus-Essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hephaestus-Essentials" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hephaestus-Essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="collections" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hephaestus-Essentials" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hephaestus-Essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="comparison" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hephaestus-Essentials" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hephaestus-Essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="contract" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hephaestus-Essentials" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hephaestus-Essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="datastructure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hephaestus-Essentials" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hephaestus-Essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="functional" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Hephaestus-Essentials" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Hephaestus-Essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="functional" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -324,13 +232,22 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
     <property name="SearchEverywhereHistoryKey" value="supplierex&#9;FILE&#9;file://C:/Projects/Java/Hephaestus/Hephaestus - Core/Hephaestus - Essentials/Hephaestus-Essentials/src/essentials/functional/exception/SupplierEx.java&#10;illegalstateex&#9;PSI&#9;JAVA://java.lang.IllegalStateException&#10;lazy&#9;FILE&#9;file://C:/Projects/Java/Hephaestus/Hephaestus - Core/Hephaestus - Essentials/Hephaestus-Essentials/src/essentials/datastructure/Lazy.java&#10;noimplementationE&#9;FILE&#9;file://C:/Projects/Java/Hephaestus/Hephaestus - Core/Hephaestus - Essentials/Hephaestus-Essentials/src/essentials/contract/NoImplementationException.java&#10;arraylisti&#9;FILE&#9;file://C:/Projects/Java/Hephaestus/Hephaestus - Core/Hephaestus - Essentials/Hephaestus-Essentials/src/essentials/datastructure/ArrayListIterator.java&#10;hashgenera&#9;FILE&#9;file://C:/Projects/Java/Hephaestus/Hephaestus - Core/Hephaestus - Essentials/Hephaestus-Essentials/src/essentials/util/HashGenerator.java" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551370576778" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.30720145" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="essentials.contract" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="essentials.functional" />
       <recent name="essentials.util" />
@@ -371,6 +288,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ContractTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Hephaestus-Essentials" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="essentials.contract.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="essentials.contract" />
+      <option name="MAIN_CLASS_NAME" value="essentials.contract.ContractTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -395,6 +328,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ContractTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -449,7 +387,7 @@
     <frame x="-8" y="-8" width="1696" height="1036" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.18520783" />
+      <window_info active="true" id="Project" order="0" visible="true" weight="0.19498777" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -464,8 +402,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49633253" visible="true" weight="0.32864866" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5036675" side_tool="true" visible="true" weight="0.32864866" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49388754" visible="true" weight="0.32864866" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50611246" side_tool="true" visible="true" weight="0.32864866" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -475,7 +413,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" visible="true" weight="0.14486553" />
-      <window_info anchor="right" id="Maven" order="8" />
+      <window_info anchor="right" id="Maven" order="8" visible="true" weight="0.19804402" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -485,35 +423,11 @@
     <MESSAGE value="incremented to version 1.0.1" />
     <option name="LAST_COMMIT_MESSAGE" value="incremented to version 1.0.1" />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/essentials/tuple/Quartet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="49" column="68" lean-forward="true" selection-start-line="49" selection-start-column="68" selection-end-line="49" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials/tuple/Unit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials/tuple/TupleImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials/tuple/Tuple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/essentials/tuple/TripletImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -544,13 +458,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/essentials/functional/exception/MatrixConstructor.java" />
     <entry file="file://$PROJECT_DIR$/src/functional/BiSupplier.java" />
-    <entry file="file://$PROJECT_DIR$/src/essentials/annotations/Positive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/essentials/functional/ArrayConstructor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -582,24 +489,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials/collections/IterableList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/essentials/tuple/KeyPairImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials/collections/ArrayListIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-500">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -712,62 +605,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials/functional/Predicates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#437#438#0" expanded="true" />
-            <element signature="e#462#463#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#675#676#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-            <element signature="e#597#598#0" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-            <element signature="e#893#894#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials/comparison/Comparison.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="e#1872#1873#0" expanded="true" />
-            <element signature="e#1906#1907#0" expanded="true" />
-            <element signature="e#2129#2130#0" expanded="true" />
-            <element signature="e#2162#2163#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/essentials/comparison/Comparison.java" />
     <entry file="file://$PROJECT_DIR$/src/essentials/comparison/SequenceComparator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials/collections/ArrayIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials/comparison/RichComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding>
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -792,20 +634,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials/contract/Contract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="166" column="32" selection-start-line="166" selection-start-column="32" selection-end-line="166" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials/util/HashGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="180" column="39" selection-start-line="180" selection-start-column="39" selection-end-line="180" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/essentials/tuple/KeyPair.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -827,13 +655,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials/datastructure/Lazy.java">
+    <entry file="file://$PROJECT_DIR$/src/essentials/collections/IterableList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="62" column="58" lean-forward="true" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/essentials/collections/ArrayListIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/essentials/collections/ArrayIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/essentials/annotations/Unfinished.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/essentials/annotations/ToTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/essentials/annotations/Singleton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/essentials/annotations/Positive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/essentials/datastructure/SafeLazy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="76" column="38" lean-forward="true" selection-start-line="76" selection-start-column="38" selection-end-line="76" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -844,10 +718,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/essentials/datastructure/SafeLazy.java">
+    <entry file="file://$PROJECT_DIR$/src/essentials/datastructure/Lazy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="81" column="40" lean-forward="true" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="40" />
+        <state relative-caret-position="335">
+          <caret line="62" column="58" lean-forward="true" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/essentials/functional/Predicates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/essentials/util/HashGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="146" column="5" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc;n#DEFAULT_MULTIPLIER_BASE#0;n#HashGenerator#0" />
+            <element signature="n#!!doc;n#HashGenerator#0;n#HashGenerator#0" />
+            <element signature="n#!!doc;n#append#0;n#HashGenerator#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/essentials/comparison/RichComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#844#845#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#978#979#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1127#1128#0" expanded="true" />
+            <element signature="e#1089#1090#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/essentials/contract/Contract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/essentials/contract/ContractTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -893,7 +825,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>1.8 (1)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

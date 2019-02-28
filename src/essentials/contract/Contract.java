@@ -4,6 +4,8 @@ import essentials.collections.ArrayIterator;
 import essentials.functional.exception.SupplierEx;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.function.BooleanSupplier;
 import java.util.function.Supplier;
 
@@ -33,7 +35,7 @@ public final class Contract {
      * @throws ParameterNullException if contract is violated
      */
     public static void checkNulls(Object... objects) throws ParameterNullException {
-        checkNulls(ArrayIterator.of(objects));
+        checkNulls(Arrays.asList(objects));
     }
 
     /**
