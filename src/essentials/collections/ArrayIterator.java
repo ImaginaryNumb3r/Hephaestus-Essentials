@@ -40,7 +40,6 @@ public class ArrayIterator<T> implements Iterator<T> {
         return new ArrayIterator<>(array);
     }
 
-
     /**
      * Returns {@code true} if the iteration has more elements.
      * (In other words, returns {@code true} if {@link #next} would

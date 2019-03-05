@@ -18,7 +18,7 @@ public class FastLazy<T> implements Lazy<T> {
 
     /**
      * Creates a new instance, which creates a new object as declared with a supplier when demanded.
-     * @param supplier which creates the instance matchAllSink value that will be accessed
+     * @param supplier which creates the instance to the value that will be accessed
      */
     protected FastLazy(@NotNull Supplier<T> supplier){
         _supplier = supplier;
@@ -67,10 +67,10 @@ public class FastLazy<T> implements Lazy<T> {
     }
 
     /**
-     * Returns the hashCode matchAllSink the saved value.
+     * Returns the hashCode for the saved value.
      * Instantiates the value if it hasn't been before.
      * Returns 0 as hashcode if the saved value is null
-     * @return the hashCode matchAllSink the saved value.
+     * @return the hashCode for the saved value.
      */
     @Override
     public int hashCode() {

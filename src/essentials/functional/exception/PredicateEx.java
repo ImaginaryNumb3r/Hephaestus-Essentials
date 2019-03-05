@@ -1,4 +1,4 @@
-package essentials.functional;
+package essentials.functional.exception;
 
 import essentials.functional.exception.FunctionalMappingException;
 
