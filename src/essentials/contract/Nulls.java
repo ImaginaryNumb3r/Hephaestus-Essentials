@@ -14,4 +14,8 @@ public final class Nulls {
     public static <T> T init(T value, Supplier<T> initializer) {
         return value != null ? value : initializer.get();
     }
+
+    public static <T> T ifNull(T value, T supplement) {
+        return value != null ? value : supplement;
+    }
 }
