@@ -10,27 +10,27 @@ import java.util.function.Predicate;
  */
 public final class Predicates {
 
-    public <T, U> boolean alwaysTrue(T t, U u) {
+    public static <T, U> boolean alwaysTrue(T t, U u) {
         return true;
     }
 
-    public <T> boolean alwaysTrue(T t) {
+    public static <T> boolean alwaysTrue(T t) {
         return true;
     }
 
-    public <T, U> boolean alwaysFalse(T t, U u) {
+    public static <T, U> boolean alwaysFalse(T t, U u) {
         return false;
     }
 
-    public <T> boolean alwaysFalse(T t) {
+    public static <T> boolean alwaysFalse(T t) {
         return false;
     }
 
-    public <T, U> boolean random(T t, U u) {
+    public static <T, U> boolean random(T t, U u) {
         return new Random().nextBoolean();
     }
 
-    public <T> boolean random(T t) {
+    public static <T> boolean random(T t) {
         return new Random().nextBoolean();
     }
 }
