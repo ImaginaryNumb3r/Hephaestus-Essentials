@@ -41,7 +41,7 @@ public interface RichComparator<T> extends Comparator<T> {
         return i < 0;
     }
 
-    static boolean isSmallerOrEqzak(int i) {
+    static boolean isSmallerOrEqual(int i) {
         return i <= 0;
     }
 
