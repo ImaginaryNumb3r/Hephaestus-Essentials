@@ -1,5 +1,6 @@
 package essentials.datastructure;
 
+import essentials.annotations.Package;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
@@ -11,7 +12,7 @@ import static essentials.util.HashGenerator.permutate;
  * Created: 16.05.2018
  * Purpose:
  */
-public class FastLazy<T> implements Lazy<T> {
+@Package class FastLazy<T> implements Lazy<T> {
     private final Supplier<T> _supplier;
     private boolean _isInstantiated;
     private T _value;
@@ -20,7 +21,7 @@ public class FastLazy<T> implements Lazy<T> {
      * Creates a new instance, which creates a new object as declared with a supplier when demanded.
      * @param supplier which creates the instance to the value that will be accessed
      */
-    protected FastLazy(@NotNull Supplier<T> supplier){
+    @Package FastLazy(@NotNull Supplier<T> supplier){
         _supplier = supplier;
     }
 

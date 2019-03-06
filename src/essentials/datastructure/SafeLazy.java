@@ -1,5 +1,6 @@
 package essentials.datastructure;
 
+import essentials.annotations.Package;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.Serializable;
@@ -17,8 +18,7 @@ import static essentials.util.HashGenerator.permutate;
  * An assigned value to this class is permanent and will never change.
  * Accessing this class is thread safe. However, the overhead for synchronization is gone once the value is instantiated.
  */
-@SuppressWarnings("WeakerAccess")
-class SafeLazy<T> implements Lazy<T>, Serializable {
+@Package class SafeLazy<T> implements Lazy<T>, Serializable {
     private final Supplier<T> _supplier;
     private boolean _isInstantiated;
     private T _value;
@@ -27,7 +27,7 @@ class SafeLazy<T> implements Lazy<T>, Serializable {
      * Creates a new instance, which creates a new object as declared with a supplier when demanded.
      * @param supplier which creates the instance for the value that will be accessed
      */
-    protected SafeLazy(@NotNull Supplier<T> supplier){
+    @Package SafeLazy(@NotNull Supplier<T> supplier){
         _supplier = supplier;
     }
 
