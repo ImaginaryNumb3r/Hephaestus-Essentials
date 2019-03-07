@@ -8,13 +8,17 @@ import java.util.Iterator;
  * Creator: Patrick
  * Created: 06.03.2019
  */
-@Package class PeekIteratorImpl<T> implements PeekIterator<T> {
+@Package class PeekIteratorImpl<T> extends AbstractPeekIterator<T, RuntimeException> implements PeekIterator<T> {
     private final Iterator<T> _iterator;
-    private boolean _hasPeeked;
-    private T _next;
 
-    @Package PeekIteratorImpl(Iterator<T> iterator) {
+    PeekIteratorImpl(Iterator<T> iterator) {
         _iterator = iterator;
+    }
+
+
+    @Override
+    protected T getNext() throws RuntimeException {
+        return _iterator.next();
     }
 
     @Override
@@ -23,29 +27,7 @@ import java.util.Iterator;
     }
 
     @Override
-    public T next() {
-        if (!_hasPeeked) {
-            return _iterator.next();
-        }
-
-        T next = _next;
-        _next = null;
-        _hasPeeked = false;
-
-        return next;
-    }
-
-    @Override
     public T peek() {
-        if (_hasPeeked) {
-            return _next;
-        }
-
-        // Only set peeking to true after calling next.
-        // If next throws an exception, peek would have undefined behaviour on subsequent calls.
-        _next = next();
-        _hasPeeked = true;
-
-        return _next;
+        return super.peek();
     }
 }

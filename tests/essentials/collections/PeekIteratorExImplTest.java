@@ -14,7 +14,7 @@ import static org.junit.Assert.assertEquals;
  * Created: 07.03.2019
  * Purpose:
  */
-public class PeekIteratorImplTest {
+public class PeekIteratorExImplTest {
 
     @Test
     public void testPeekIterator() {
