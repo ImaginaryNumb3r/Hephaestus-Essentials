@@ -2,7 +2,6 @@ package essentials.collections;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.NoSuchElementException;
 

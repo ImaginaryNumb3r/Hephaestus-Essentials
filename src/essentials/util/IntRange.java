@@ -41,7 +41,7 @@ public final class IntRange implements IterableList<Integer> {
 
     public void forEach(IntConsumer consumer) {
         int start = _forward ? this.start : this.end;
-        int end = _forward ? this.start : this.end;
+        int end = _forward ? this.end : this.start;
         int pos = _forward ? start : end;
 
         while (_forward ? pos != end : pos != start) {

@@ -1,7 +1,5 @@
 package essentials.functional.exception;
 
-import essentials.functional.exception.FunctionalMappingException;
-
 import java.util.function.BinaryOperator;
 
 /**
