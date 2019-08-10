@@ -15,6 +15,7 @@ import java.util.function.Supplier;
  * Accessing this class is guaranteed to be thread safe.
  * The implementation is expected to eliminate the cost for synchronization once the value is instanced.
  */
+// TODO: ConstantLazy which makes use of constant dynamic.
 public interface Lazy<T> extends Supplier<T> {
 
     /**
