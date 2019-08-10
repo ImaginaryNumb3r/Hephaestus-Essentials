@@ -3,8 +3,10 @@ package essentials.functional;
 import java.util.Random;
 
 /**
- * @author Patrick
+ * @since Patrick Plieschnegger
  * @since 10.01.2018
+ *
+ * Common predicates Predicate and BiPredicate
  */
 public final class Predicates {
 

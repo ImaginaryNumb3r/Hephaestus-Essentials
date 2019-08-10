@@ -3,7 +3,7 @@ package essentials.functional.exception;
 import java.util.function.BinaryOperator;
 
 /**
- * Creator: Patrick
+ * @since Patrick Plieschnegger
  * Created: 16.05.2018
  * Purpose:
  */
@@ -13,7 +13,8 @@ public interface BinaryOperatorEx<T, X extends Exception> extends BinaryOperator
     T tryApply(T t1, T t2) throws X;
 
     /**
-     * Applies this function to the given argument.
+     * It is discouraged to call this method directly and only exists to perform an implementation of accept.
+     * The method is deprecated to communicate this very clearly.
      *
      * @param t1 the first function argument
      * @param t2 the second function argument
@@ -21,6 +22,7 @@ public interface BinaryOperatorEx<T, X extends Exception> extends BinaryOperator
      *         Will contain exception of type X as inner exception
      * @return the function result
      */
+    @Deprecated
     @Override
     default T apply(T t1, T t2){
         try {

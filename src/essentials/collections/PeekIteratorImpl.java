@@ -1,8 +1,6 @@
 package essentials.collections;
 
 import essentials.annotations.Package;
-import essentials.functional.exception.ConsumerEx;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Iterator;
 

@@ -3,8 +3,8 @@ package essentials.functional.exception;
 import java.util.function.Consumer;
 
 /**
- * Creator: Patrick
- * Created: 16.05.2018
+ * @since Patrick Plieschnegger
+ * * Created: 16.05.2018
  * Purpose:
  */
 @FunctionalInterface

@@ -6,7 +6,7 @@ import org.jetbrains.annotations.Nullable;
  * @author Patrick
  * @since 26.11.2016
  *
- * An exception indicating that null was assigned to a non-nullable parameter
+ * An exception indicating that null was assigned to a non-nullable parameter.
  */
 public class ParameterNullException extends IllegalArgumentException {
     private static final String MESSAGE = "Parameter may not be null";

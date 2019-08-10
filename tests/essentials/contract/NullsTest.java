@@ -3,7 +3,7 @@ package essentials.contract;
 import org.junit.Test;
 
 import static essentials.util.Nulls.init;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class NullsTest {
 

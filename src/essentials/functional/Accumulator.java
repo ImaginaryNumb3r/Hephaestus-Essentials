@@ -3,9 +3,8 @@ package essentials.functional;
 import java.util.function.BiFunction;
 
 /**
- * Creator: Patrick
+ * @since Patrick Plieschnegger
  * Created: 28.02.2019
- * Purpose:
  */
 @FunctionalInterface
 public interface Accumulator<Acc, Buffer> extends BiFunction<Acc, Buffer, Buffer> {

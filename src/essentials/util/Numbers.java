@@ -3,7 +3,7 @@ package essentials.util;
 import essentials.contract.InstanceNotAllowedException;
 
 /**
- * @author Patrick
+ * @author Patrick Plieschnegge
  * @since 13.05.2019
  */
 public final class Numbers {

@@ -3,7 +3,7 @@ package essentials.functional.exception;
 import java.util.function.Predicate;
 
 /**
- * Creator: Patrick
+ * @since Patrick Plieschnegger
  * Created: 16.05.2018
  * Purpose:
  */

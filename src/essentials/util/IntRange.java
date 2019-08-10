@@ -12,9 +12,8 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * Creator: Patrick
+ * @author Patrick Plieschnegger
  * Created: 18.08.2017
- * Purpose:
  */
 public final class IntRange implements IterableList<Integer> {
     public final int start;

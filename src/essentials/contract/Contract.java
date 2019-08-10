@@ -12,6 +12,9 @@ import java.util.function.Supplier;
  * Created: 11.12.2016
  *
  * Experimental Class
+ * TODO: Remove contract and suggest migrating to one of the following:
+ *  - https://bitbucket.org/cowwoc/requirements.java/wiki/Home
+ *  - http://www.valid4j.org
  */
 @SuppressWarnings("WeakerAccess")
 

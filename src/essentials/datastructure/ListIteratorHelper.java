@@ -3,7 +3,7 @@ package essentials.datastructure;
 import java.util.ListIterator;
 
 /**
- * @author Patrick
+ * @author Patrick Plieschnegger
  * @since 01.06.2017
  *
  * Internal helper Interface to unify logic and minimize code imprint.

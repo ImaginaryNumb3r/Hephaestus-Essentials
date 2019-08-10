@@ -69,6 +69,7 @@ import static essentials.util.HashGenerator.permutate;
     /**
      * Returns true if the given object is also a Lazy type with an equal internal value
      * Instantiates the value if it hasn't been before.
+     *
      * @param obj the other object
      * @return true if the given object is also a Lazy type with an equal internal value
      */
@@ -82,6 +83,7 @@ import static essentials.util.HashGenerator.permutate;
      * Returns the hashCode for the saved value.
      * Instantiates the value if it hasn't been before.
      * Returns 0 as hashcode if the saved value is null
+     *
      * @return the hashCode for the saved value.
      */
     @Override

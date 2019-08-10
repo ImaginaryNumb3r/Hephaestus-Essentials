@@ -5,8 +5,6 @@ import essentials.functional.exception.FunctionalMappingException;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Iterator;
-import java.util.Objects;
-import java.util.function.Consumer;
 
 /**
  * Creator: Patrick
