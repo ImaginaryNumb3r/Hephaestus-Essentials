@@ -1,7 +1,6 @@
 package essentials.tuple;
 
 import essentials.collections.ArrayListIterator;
-import essentials.contract.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -16,12 +15,10 @@ import java.util.ListIterator;
 public interface Tuple<A, B> extends Unit<A>{
 
     static <A, B> Tuple<A, B> from(Tuple<A, B> tuple){
-        Contract.checkNull(tuple, "tuple");
         return new TupleImpl<>(tuple);
     }
 
     static <A, B> Tuple<A, B> from(Unit<A> unit, @Nullable B b){
-        Contract.checkNull(unit, "unit");
         return new TupleImpl<>(unit.getA(), b);
     }
 

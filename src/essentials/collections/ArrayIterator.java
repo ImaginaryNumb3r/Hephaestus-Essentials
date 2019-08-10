@@ -1,6 +1,5 @@
 package essentials.collections;
 
-import essentials.contract.Contract;
 import essentials.contract.ParameterNullException;
 import essentials.util.HashGenerator;
 import org.jetbrains.annotations.NotNull;
@@ -36,7 +35,6 @@ public class ArrayIterator<T> implements Iterator<T> {
      */
     @SafeVarargs
     public static <T> Iterator<T> of(@NotNull T... array) {
-        Contract.checkNull(array);
         return new ArrayIterator<>(array);
     }
 

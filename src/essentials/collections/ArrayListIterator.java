@@ -1,7 +1,6 @@
 package essentials.collections;
 
 
-import essentials.contract.Contract;
 import essentials.contract.NoImplementationException;
 import essentials.contract.ParameterNullException;
 import essentials.datastructure.ListIteratorHelper;
@@ -34,7 +33,6 @@ public class ArrayListIterator<T> extends ArrayIterator<T> implements ListIterat
      */
     @SafeVarargs
     public static <T> ListIterator<T> of(@NotNull T... array) {
-        Contract.checkNull(array);
         return new ArrayListIterator<>(array);
     }
 

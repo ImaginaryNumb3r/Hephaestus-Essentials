@@ -1,6 +1,5 @@
 package essentials.tuple;
 
-import essentials.contract.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -13,7 +12,6 @@ import java.util.Map;
 public interface KeyPair<Key, Val> extends Tuple<Key, Val>{
 
     static <Key, Val> KeyPair from(@NotNull Tuple<Key, Val> tuple) {
-        Contract.checkNull(tuple, "tuple");
         return new KeyPairImpl<>(tuple);
     }
 

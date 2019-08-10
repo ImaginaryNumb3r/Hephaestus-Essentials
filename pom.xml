@@ -11,6 +11,7 @@
     <url>https://github.com/ImaginaryNumb3r/Hephaestus</url>
 
     <properties>
+        <requirements.version>5.1.2</requirements.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -40,6 +41,11 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.bitbucket.cowwoc.requirements</groupId>
+            <artifactId>java</artifactId>
+            <version>${requirements.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -59,15 +65,23 @@
                 <directory>test/resources</directory>
             </testResource>
         </testResources>
+
+
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.5</version>
-                <configuration>
-                    <source>11</source>
-                    <target>11</target>
-                </configuration>
+                <groupId>org.bitbucket.cowwoc.requirements</groupId>
+                <artifactId>maven_plugin</artifactId>
+                <version>${requirements.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <!-- Generates the DefaultRequirements, Requirements endpoints -->
+                            <goal>generate-api</goal>
+                            <!-- Adds support for colored diffs (optional) -->
+                            <goal>unpack</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

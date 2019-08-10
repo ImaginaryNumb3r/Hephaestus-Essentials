@@ -1,6 +1,5 @@
 package essentials.datastructure;
 
-import essentials.contract.Contract;
 import essentials.contract.ParameterNullException;
 import org.jetbrains.annotations.NotNull;
 
@@ -57,7 +56,6 @@ public interface Lazy<T> extends Supplier<T> {
      * @throws ParameterNullException if param supplier is null
      */
     static <S> Lazy<S> of(@NotNull Supplier<S> supplier){
-        Contract.checkNull(supplier, "supplier");
         return new SafeLazy<>(supplier);
     }
 
@@ -71,7 +69,6 @@ public interface Lazy<T> extends Supplier<T> {
      * @throws ParameterNullException if param supplier is null
      */
     static <S> Lazy<S> lazily(@NotNull Supplier<S> supplier){
-        Contract.checkNull(supplier, "supplier");
         return new FastLazy<>(supplier);
     }
 }
