@@ -9,12 +9,12 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- * @author Patrick
+ * @author Patrick Plieschnegger
  * @since 05.05.2017
  * @param <T> Generic Value of the array
  */
 public class ArrayIterator<T> implements Iterator<T> {
-    protected final int NOT_INITIALIZED = -1;
+    protected static final int NOT_INITIALIZED = -1;
     protected final T[] _array;
     protected int _pos = NOT_INITIALIZED; // Initialize with invalid value.
 

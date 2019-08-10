@@ -1,10 +1,8 @@
 package essentials.contract;
 
-import essentials.collections.ArrayIterator;
 import essentials.functional.exception.SupplierEx;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.function.BooleanSupplier;
 import java.util.function.Supplier;

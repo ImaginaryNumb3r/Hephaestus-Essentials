@@ -1,8 +1,6 @@
 package essentials.functional;
 
 import java.util.Random;
-import java.util.function.BiPredicate;
-import java.util.function.Predicate;
 
 /**
  * @author Patrick

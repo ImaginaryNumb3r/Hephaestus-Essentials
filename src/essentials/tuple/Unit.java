@@ -1,7 +1,7 @@
 package essentials.tuple;
 
-import essentials.contract.Contract;
 import essentials.collections.ArrayListIterator;
+import essentials.contract.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

@@ -10,6 +10,13 @@ import java.util.function.Consumer;
 @FunctionalInterface
 public interface ConsumerEx<T, X extends Exception> extends Consumer<T> {
 
+    /**
+     * It is discouraged to call this method directly and only exists to perform an implementation of accept.
+     * The method is deprecated to communicate this very clearly.
+     *
+     * In the future, FunctionalMappingException will be removed.
+     */
+    @Deprecated
     @Override
     default void accept(T item) {
         try {
@@ -19,6 +26,9 @@ public interface ConsumerEx<T, X extends Exception> extends Consumer<T> {
         }
     }
 
+    /**
+     * This is the preferred method for invoking an action.
+     */
     T tryAccept(T item) throws X;
 
 }

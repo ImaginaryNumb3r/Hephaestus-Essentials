@@ -4,7 +4,7 @@
 
     <groupId>com.github.ImaginaryNumb3r</groupId>
     <artifactId>hephaestus-essentials</artifactId>
-    <version>1.0.3</version>
+    <version>1.1</version>
     <packaging>jar</packaging>
     <description>TODO</description>
     <name>${project.groupId}:${project.artifactId}:${project.version}</name>
@@ -12,8 +12,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.9</maven.compiler.source>
-        <maven.compiler.target>1.9</maven.compiler.target>
+        <maven.compiler.source>1.11</maven.compiler.source>
+        <maven.compiler.target>1.11</maven.compiler.target>
     </properties>
 
     <repositories>
@@ -26,16 +26,8 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-    </repositories> <!--
-    
-    <distributionManagement>
-        <snapshotRepository>
-            <id>github.com</id>
-            <name>my snapshot repository</name>
-            <url>file:///path/to/snapshot/repo</url>
-        </snapshotRepository>
-    </distributionManagement> -->
-    
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>org.jetbrains</groupId>
@@ -92,15 +84,4 @@
         <developerConnection>scm:git:ssh:///github.com/ImaginaryNumb3r/Hephaestus..git</developerConnection>
         <url>https://github.com/ImaginaryNumb3r/Hephaestus</url>
     </scm>
-
-
-    <developers>
-        <developer>
-            <name>Patrick Plieschnegger</name>
-            <email>patrick.plieschnegger@gmail.com</email>
-            <organization>ImaginaryNumb3r</organization>
-            <organizationUrl>http://www.none.com</organizationUrl>
-        </developer>
-    </developers>
-
 </project>
