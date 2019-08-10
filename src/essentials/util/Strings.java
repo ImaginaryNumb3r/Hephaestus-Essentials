@@ -48,7 +48,7 @@ public final class Strings {
     }
 
     public static String joinToString(Iterable<?> objects, String separator) {
-        ArrayList<String> strings = new ArrayList<>();
+        var strings = new ArrayList<String>();
         objects.forEach(obj -> strings.add(obj.toString()));
 
         return join(strings, separator);
@@ -63,7 +63,8 @@ public final class Strings {
      */
     public static String join(@NotNull Iterable<? extends CharSequence> strings, @NotNull CharSequence delimiter) {
         String result = "";
-        Iterator<? extends CharSequence> iter = strings.iterator();
+        var iter = strings.iterator();
+
         while (iter.hasNext()) {
             CharSequence string = iter.next();
             result += string;
