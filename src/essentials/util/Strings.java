@@ -1,5 +1,8 @@
 package essentials.util;
 
+import essentials.annotations.Positive;
+import essentials.contract.Contract;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -51,5 +54,16 @@ public class Strings {
         }
 
         return result;
+    }
+
+    public static String ofSequence(char character, @Positive int occurrence) {
+        Contract.checkNegative(occurrence);
+
+        char[] chars = new char[occurrence];
+        for (int i = 0; i != occurrence; ++i) {
+            chars[i] = character;
+        }
+
+        return String.valueOf(chars);
     }
 }
