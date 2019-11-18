@@ -41,11 +41,6 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.bitbucket.cowwoc.requirements</groupId>
-            <artifactId>java</artifactId>
-            <version>${requirements.version}</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -68,21 +63,6 @@
 
 
         <plugins>
-            <plugin>
-                <groupId>org.bitbucket.cowwoc.requirements</groupId>
-                <artifactId>maven_plugin</artifactId>
-                <version>${requirements.version}</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <!-- Generates the DefaultRequirements, Requirements endpoints -->
-                            <goal>generate-api</goal>
-                            <!-- Adds support for colored diffs (optional) -->
-                            <goal>unpack</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 
