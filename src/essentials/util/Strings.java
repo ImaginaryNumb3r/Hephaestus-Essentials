@@ -1,11 +1,11 @@
 package essentials.util;
 
+import essentials.annotations.Positive;
 import essentials.contract.InstanceNotAllowedException;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 
 /**
  * @author Patrick Plieschnegger
@@ -75,5 +75,17 @@ public final class Strings {
         }
 
         return result;
+    }
+
+    public static String ofSequence(char character, @Positive int occurrence) {
+        if (occurrence < 0)
+            throw new IllegalArgumentException("Occurance must be positive for string sequences. Argument: " + occurrence);
+
+        char[] chars = new char[occurrence];
+        for (int i = 0; i != occurrence; ++i) {
+            chars[i] = character;
+        }
+
+        return String.valueOf(chars);
     }
 }
