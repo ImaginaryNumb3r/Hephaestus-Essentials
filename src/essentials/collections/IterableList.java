@@ -5,10 +5,12 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ListIterator;
 
 /**
- * @author Patrick
+ * @author Patrick Plieschnegger
  * @since 16.11.2016
+ *
+ * A convenience Interface for implementing the listIterator() method that can be found on java.util.List.
+ * It extends the Iterable interface and auto-implements it.
  */
-// TODO: Move to Collections Framework
 public interface IterableList<T> extends Iterable<T> {
 
     /**

@@ -8,9 +8,9 @@ import java.util.function.Supplier;
 import static essentials.util.HashGenerator.permutate;
 
 /**
- * Creator: Patrick
- * Created: 16.05.2018
- * Purpose:
+ * @author Patrick Plieschnegger
+ * @since 16.05.2018
+ * A non thread-safe implementation of Lazy.
  */
 @Package class FastLazy<T> implements Lazy<T> {
     private final Supplier<T> _supplier;
@@ -58,6 +58,7 @@ import static essentials.util.HashGenerator.permutate;
     /**
      * Returns true if the given object is also a Lazy type with an equal internal value
      * Instantiates the value if it hasn't been before.
+     *
      * @param obj the other object
      * @return true if the given object is also a Lazy type with an equal internal value
      */
@@ -71,6 +72,7 @@ import static essentials.util.HashGenerator.permutate;
      * Returns the hashCode for the saved value.
      * Instantiates the value if it hasn't been before.
      * Returns 0 as hashcode if the saved value is null
+     *
      * @return the hashCode for the saved value.
      */
     @Override

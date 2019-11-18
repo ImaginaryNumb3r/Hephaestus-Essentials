@@ -4,10 +4,8 @@ package essentials.contract;
  * @author Patrick
  * @since 19.05.2017
  *
- * An exception that is thrown when something has not been implemented yet but is scheduled to be.
- * This is supposed to replace the NotImplementedException and UnsupportedOperationException
- * It replaces the former one because it is an internal Oracle API
- * And it replaces the latter one, because it is not specific enough and can be used for other meanings as well
+ * An exception that is thrown to communicate that a method has no valid implementation.
+ * This is a alternative to the disfavoured NotImplementedException and vague UnsupportedOperationException.
  */
 public class NoImplementationException extends RuntimeException {
 

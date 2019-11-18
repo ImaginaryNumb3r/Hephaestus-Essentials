@@ -1,25 +1,27 @@
 package essentials.collections;
 
+import essentials.annotations.ToTest;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ListIterator;
 import java.util.NoSuchElementException;
 
 /**
- * Creator: Patrick
- * Created: 05.04.2019
+ * @author Patrick Plieschnegger
+ * An Iterator which iterates all integers from a start to an end.
  */
+@ToTest
 public class BoundsIterator implements ListIterator<Integer> {
     private final int _start;
     private final int _end;
     private final boolean _forward;
     private int _pos;
 
-    public BoundsIterator(int start, int end) {
-        _forward = start < end;
-        _start = start;
-        _end = end;
-        _pos = start;
+    public BoundsIterator(int includeStart, int exclusiveEnd) {
+        _forward = includeStart < exclusiveEnd;
+        _start = includeStart;
+        _end = exclusiveEnd;
+        _pos = _start;
     }
 
     @Override
@@ -60,18 +62,27 @@ public class BoundsIterator implements ListIterator<Integer> {
         return _forward ? _pos - 1 : _pos - 1;
     }
 
+    /**
+     * This method throws an UnsupportedOperationException (a range cannot change its content).
+     */
     @Override
-    public void remove() {
+    public final void remove() {
         throw new UnsupportedOperationException("Cannot mutate a bound of integers.");
     }
 
+    /**
+     * This method throws an UnsupportedOperationException (a range cannot change its content).
+     */
     @Override
-    public void set(Integer integer) {
+    public final void set(Integer dontUseThis) {
         throw new UnsupportedOperationException("Cannot mutate a bound of integers.");
     }
 
+    /**
+     * This method throws an UnsupportedOperationException (a range cannot change its content).
+     */
     @Override
-    public void add(Integer integer) {
+    public final void add(Integer dontUseThis) {
         throw new UnsupportedOperationException("Cannot mutate a bound of integers.");
     }
 }

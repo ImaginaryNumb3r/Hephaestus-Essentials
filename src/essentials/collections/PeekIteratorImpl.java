@@ -15,6 +15,15 @@ import java.util.Iterator;
         _iterator = iterator;
     }
 
+    @Override
+    public T peek() throws RuntimeException {
+        return super.peek();
+    }
+
+    @Override
+    public T next() throws RuntimeException {
+        return super.next();
+    }
 
     @Override
     protected T getNext() throws RuntimeException {
@@ -24,10 +33,5 @@ import java.util.Iterator;
     @Override
     public boolean hasNext() {
         return _iterator.hasNext();
-    }
-
-    @Override
-    public T peek() {
-        return super.peek();
     }
 }

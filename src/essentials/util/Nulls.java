@@ -1,16 +1,38 @@
 package essentials.util;
 
+import essentials.contract.InstanceNotAllowedException;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Optional;
 import java.util.function.Consumer;
+import java.util.function.Supplier;
 
 /**
- * Creator: Patrick
- * Created: 21.03.2019
- * Purpose:
+ * @author Patrick Plieschnegger
  */
 public final class Nulls {
+
+    private Nulls() {
+        throw new InstanceNotAllowedException(getClass());
+    }
+
+    public static <T> T init(T value, @NotNull T fallback) {
+        return value != null ? value : fallback;
+    }
+
+    public static <T> T init(T value, @NotNull Supplier<T> initializer) {
+        return value != null ? value : initializer.get();
+    }
+
+    public static <T> T ifNull(T value, @NotNull T supplement) {
+        return value != null ? value : supplement;
+    }
+
+    public static <T> void ifnull(T object, @NotNull Runnable action) {
+        if (object == null) {
+            action.run();
+        }
+    }
 
     public static <T> void ifPresent(T object, @NotNull Consumer<T> consumer) {
         if (object != null) {
@@ -20,12 +42,6 @@ public final class Nulls {
 
     public static <T> void ifPresent(T object, @NotNull Runnable action) {
         if (object != null) {
-            action.run();
-        }
-    }
-
-    public static <T> void ifnull(T object, @NotNull Runnable action) {
-        if (object == null) {
             action.run();
         }
     }

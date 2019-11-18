@@ -4,8 +4,9 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * @author Patrick
- * @description
  * @since 23.05.2017
+ *
+ * An exception that is thrown when an instance of a class is now allowed (think java.lang.Math)
  */
 public class InstanceNotAllowedException extends RuntimeException {
 

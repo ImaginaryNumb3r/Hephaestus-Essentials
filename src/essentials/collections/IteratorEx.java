@@ -2,15 +2,17 @@ package essentials.collections;
 
 import essentials.functional.exception.ConsumerEx;
 import essentials.functional.exception.FunctionalMappingException;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Iterator;
-import java.util.Objects;
-import java.util.function.Consumer;
 
 /**
  * Creator: Patrick
  * Created: 16.05.2018
- * Purpose:
+ *
+ * @param <T> the returned data of the iterator.
+ * @param <X> the exception that can be thrown.
+ * An iterator which can throw an exception of type X.
  */
 public interface IteratorEx<T, X extends Exception> {
 
@@ -32,16 +34,14 @@ public interface IteratorEx<T, X extends Exception> {
         };
     }
 
-    default void forEachRemaining(ConsumerEx<? super T, X> action) throws X {
-        Objects.requireNonNull(action);
-        while (hasNext())
-            action.accept(next());
+    default void forEach(@NotNull ConsumerEx<? super T, X> action) throws X {
+        while (hasNext()) {
+            T value = next();
+            action.tryAccept(value);
+        }
     }
 
-    default void forEach(Consumer<? super T> action) {
-        toIterator().forEachRemaining(action);
-    }
-
+    @Deprecated() // I will get rid of FunctionalMappingException in the future. Don't use it.
     default Iterator<T> toIterator() {
         return new Iterator<>() {
             @Override
@@ -60,6 +60,14 @@ public interface IteratorEx<T, X extends Exception> {
         };
     }
 
+    /**
+     * Factory method to create a function ally identical Iterator from an IteratorEX which returns a RuntimeException.
+     *
+     * @param iteratorEx original instance
+     * @param <T> type of conveyed data
+     * @param <X> type of runtime exception
+     * @return Wrapped IteatorEX instance inside a new java.lang.Iterator.
+     */
     static <T, X extends RuntimeException> Iterator<T> toIterator(IteratorEx<T, X> iteratorEx) {
         return new Iterator<>() {
             @Override

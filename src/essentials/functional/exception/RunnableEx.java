@@ -2,7 +2,7 @@ package essentials.functional.exception;
 
 
 /**
- * @author Patrick
+ * @since Patrick Plieschnegger
  * @since 23.01.2017
  */
 // TODO: Consider removal or make experimental
@@ -10,9 +10,10 @@ package essentials.functional.exception;
 public interface RunnableEx<X extends Throwable> extends Runnable{
 
     /**
-     * Executes a method, but a runtime exception may also be thrown
-     * @throws RuntimeException will have an inner exception, which needs to be specified in the implementation
+     * It is discouraged to call this method directly and only exists to perform an implementation of accept.
+     * The method is deprecated to communicate this very clearly.
      */
+    @Deprecated
     @Override
     default void run(){
         try {

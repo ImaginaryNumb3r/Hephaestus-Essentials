@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- * @author Patrick
+ * @author Patrick Plieschnegger
  * @since 05.05.2017
  * @param <T> Generic Value of the array
  */

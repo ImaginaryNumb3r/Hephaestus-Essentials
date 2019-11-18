@@ -1,26 +1,40 @@
 package essentials.util;
 
 import essentials.annotations.Positive;
-import essentials.contract.Contract;
+import essentials.contract.InstanceNotAllowedException;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 
 /**
  * @author Patrick Plieschnegger
  */
 @SuppressWarnings("StringConcatenationInLoop")
-public class Strings {
+public final class Strings {
+
+    private Strings() {
+        throw new InstanceNotAllowedException(getClass());
+    }
 
     public static String toString(Object object, String fallback) {
         return object != null ? object.toString() : fallback;
     }
 
+    /**
+     * Derives the string representation of the provided objects and concatenates them.
+     * @param objects using toString to derive their string representation.
+     * @return joined string of all objects (via string representation).
+     */
     public static String concat(Object... objects) {
         return concat(Arrays.asList(objects));
     }
 
+    /**
+     * Derives the string representation of the provided objects and concatenates them.
+     * @param objects using toString to derive their string representation.
+     * @return joined string of all objects (via string representation).
+     */
     public static String concat(Iterable<?> objects) {
         return joinToString(objects, "");
     }
@@ -34,22 +48,29 @@ public class Strings {
     }
 
     public static String joinToString(Iterable<?> objects, String separator) {
-        ArrayList<String> strings = new ArrayList<>();
+        var strings = new ArrayList<String>();
         objects.forEach(obj -> strings.add(obj.toString()));
 
         return join(strings, separator);
     }
 
-    public static String join(Iterable<String> strings, String separator) {
+    /**
+     * Joins the strings, each separated by a delimiter.
+     *
+     * @param strings which are joined
+     * @param delimiter the value between the objects.
+     * @return joined string of all strings, separated by delimiters.
+     */
+    public static String join(@NotNull Iterable<? extends CharSequence> strings, @NotNull CharSequence delimiter) {
         String result = "";
+        var iter = strings.iterator();
 
-        Iterator<String> iter = strings.iterator();
         while (iter.hasNext()) {
-            String string = iter.next();
+            CharSequence string = iter.next();
             result += string;
 
             if (iter.hasNext()) {
-                result += separator;
+                result += delimiter;
             }
         }
 
@@ -57,7 +78,8 @@ public class Strings {
     }
 
     public static String ofSequence(char character, @Positive int occurrence) {
-        Contract.checkNegative(occurrence);
+        if (occurrence < 0)
+            throw new IllegalArgumentException("Occurance must be positive for string sequences. Argument: " + occurrence);
 
         char[] chars = new char[occurrence];
         for (int i = 0; i != occurrence; ++i) {
