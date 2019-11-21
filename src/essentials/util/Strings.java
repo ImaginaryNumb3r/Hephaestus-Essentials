@@ -23,6 +23,7 @@ public final class Strings {
 
     /**
      * Derives the string representation of the provided objects and concatenates them.
+     *
      * @param objects using toString to derive their string representation.
      * @return joined string of all objects (via string representation).
      */
@@ -32,6 +33,7 @@ public final class Strings {
 
     /**
      * Derives the string representation of the provided objects and concatenates them.
+     *
      * @param objects using toString to derive their string representation.
      * @return joined string of all objects (via string representation).
      */
@@ -47,13 +49,19 @@ public final class Strings {
         return join(Arrays.asList(strings), " ");
     }
 
-    public static String joinToString(Iterable<?> objects, String separator) {
+    /**
+     * Joins the string representation of the provided objects, separated by a delimiter.
+     *
+     * @param objects using toString to derive their string representation.
+     * @param delimiter the value between the objects.
+     * @return joined string of objects (via string representation), separated by a delimiter.
+     */
+    public static String joinToString(@NotNull Iterable<?> objects, @NotNull String delimiter) {
         var strings = new ArrayList<String>();
         objects.forEach(obj -> strings.add(obj.toString()));
 
-        return join(strings, separator);
+        return join(strings, delimiter);
     }
-
     /**
      * Joins the strings, each separated by a delimiter.
      *

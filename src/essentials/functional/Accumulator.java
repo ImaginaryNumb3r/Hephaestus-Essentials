@@ -14,4 +14,5 @@ public interface Accumulator<Acc, Buffer> extends BiFunction<Acc, Buffer, Buffer
     default Buffer noOp(Acc acc, Buffer buffer) {
         return buffer;
     }
+
 }

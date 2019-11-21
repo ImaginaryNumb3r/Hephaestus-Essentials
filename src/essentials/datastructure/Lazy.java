@@ -55,6 +55,7 @@ public interface Lazy<T> extends Supplier<T> {
      * @return LazyImpl instance for the provided supplier
      * @throws ParameterNullException if param supplier is null
      */
+    // TODO: Rename to safe(...);
     static <S> Lazy<S> of(@NotNull Supplier<S> supplier){
         return new SafeLazy<>(supplier);
     }
@@ -68,6 +69,7 @@ public interface Lazy<T> extends Supplier<T> {
      * @return FastLazy instance for the provided supplier
      * @throws ParameterNullException if param supplier is null
      */
+    // TODO: Rename to of(...);
     static <S> Lazy<S> lazily(@NotNull Supplier<S> supplier){
         return new FastLazy<>(supplier);
     }

@@ -15,6 +15,18 @@ import java.util.function.Consumer;
  *
  * @apiNote It is up to use-site of this class to define the meaning of each type when each type of result is returned.
  * @implNote The implementation of this class may add further types of Results in the future.
+ *
+ * // TODO: A class similar to Result, but called "ERROR"
+ * Contains exceptions that can be thrown via method. Has error levels similar to logging:
+ *  - Fatal -> must contain an Error
+ *  - Critical -> Must contain runtime-exception
+ *  - Serious
+ *  - Failure
+ *  - Debug
+ *  - Info
+ *  - None
+ *
+ *  Where you can check for "worse than info"
  */
 public class Result<Data> {
     private final Data _data;
@@ -117,6 +129,16 @@ public class Result<Data> {
     }
 
     /**
+     * Factory method to create an empty result of type OK. Construction will never fail.
+     * Method {@code getData} will return null.
+     *
+     * @return Result instance of type OK containing the provided data.
+     */
+    public static <Data> Result<Data> ok() {
+        return new Result<>(null, Type.OK);
+    }
+
+    /**
      * Factory method to create a result of type FAILURE. Construction will never fail.
      *
      * @param data to serve as a value for the main execution path or null as a signal for no value.
@@ -124,6 +146,16 @@ public class Result<Data> {
      */
     public static <Data> Result<Data> failure(Data data) {
         return new Result<>(data, Type.FAILURE);
+    }
+
+    /**
+     * Factory method to create an empty result of type FAILURE. Construction will never fail.
+     * Method {@code getData} will return null.
+     *
+     * @return Result instance of type FAILURE containing the provided data.
+     */
+    public static <Data> Result<Data> failure() {
+        return new Result<>(null, Type.FAILURE);
     }
 
     /**
@@ -135,6 +167,17 @@ public class Result<Data> {
      */
     public static <Data> Result<Data> error(Data data) {
         return new Result<>(data, Type.ERROR);
+    }
+
+    /**
+     * Factory method to create an empty result of type ERROR. Construction will never fail.
+     * Method {@code getData} will return null.
+     * However, it is preferred to return something that informs the caller about the nature of the error.
+     *
+     * @return Result instance of type ERROR containing the provided data.
+     */
+    public static <Data> Result<Data> error() {
+        return new Result<>(null, Type.ERROR);
     }
 
     /**

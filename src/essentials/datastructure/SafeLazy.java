@@ -20,7 +20,8 @@ import static essentials.util.HashGenerator.permutate;
  */
 @Package class SafeLazy<T> implements Lazy<T>, Serializable {
     private final Supplier<T> _supplier;
-    private boolean _isInstantiated;
+    // Volatile since creation in one thread is not immediately visible to another one. Also, volatile reads are relatively cheap.
+    private volatile boolean _isInstantiated;
     private T _value;
 
     /**
