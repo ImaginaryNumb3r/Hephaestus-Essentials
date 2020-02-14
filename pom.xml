@@ -60,10 +60,6 @@
                 <directory>test/resources</directory>
             </testResource>
         </testResources>
-
-
-        <plugins>
-        </plugins>
     </build>
 
     <licenses>
