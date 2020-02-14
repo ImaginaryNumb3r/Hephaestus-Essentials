@@ -1,6 +1,6 @@
 package essentials.functional;
 
-import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * @since Patrick Plieschnegger
@@ -27,10 +27,12 @@ public final class Predicates {
     }
 
     public static <T, U> boolean random(T t, U u) {
-        return new Random().nextBoolean();
+        ThreadLocalRandom random = ThreadLocalRandom.current();
+        return random.nextBoolean();
     }
 
     public static <T> boolean random(T t) {
-        return new Random().nextBoolean();
+        ThreadLocalRandom random = ThreadLocalRandom.current();
+        return random.nextBoolean();
     }
 }
