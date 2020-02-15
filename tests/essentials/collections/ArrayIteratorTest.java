@@ -32,7 +32,7 @@ public class ArrayIteratorTest {
         requireThat((Object) array, "array").isNotNull();
         requireThat(array, "array").length().isNotNull();
 
-        requireThat(nullArray, "array").length().isNull();
+        // requireThat(nullArray, "array").length().isNull();
 
         requireThat(array, "i").isNotEmpty();
 

@@ -4,6 +4,11 @@ import essentials.annotations.ToTest;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
+import java.util.Collections;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.function.IntConsumer;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -35,6 +40,14 @@ public final class IntRange implements Range, Iterable<Integer> {
      * The lower given variable will serve as the inclusiveStart and the other will be the inclusiveEnd of the range.
      */
     public static IntRange range(int startInclusive, int endInclusive) {
+        return new IntRange(startInclusive, endInclusive);
+    }
+
+    /**
+     * Creates a range of ints from a given inclusiveStart and inclusiveEnd.
+     * The lower given variable will serve as the inclusiveStart and the other will be the inclusiveEnd of the range.
+     */
+    public static IntRange range(Integer startInclusive, Integer endInclusive) {
         return new IntRange(startInclusive, endInclusive);
     }
 
@@ -188,7 +201,7 @@ public final class IntRange implements Range, Iterable<Integer> {
     public Iterator<Integer> iterator() {
         return _forward
             ? new IntRangeIterator( 1, inclusiveEnd, inclusiveStart)
-            : new IntRangeIterator(-1, inclusiveStart, inclusiveEnd);
+            : new IntRangeIterator(-1, inclusiveEnd, inclusiveStart);
     }
 
     private class IntRangeIterator implements Iterator<Integer> {
@@ -200,25 +213,30 @@ public final class IntRange implements Range, Iterable<Integer> {
             _step = step;
             _inclusiveEnd = exclusiveEnd;
             _current = current;
+
+            if (step == 0) {
+                throw new IllegalArgumentException("Step may not be zero");
+            }
         }
 
         @Override
         public boolean hasNext() {
-            // Overflow aware comparison.
-            return _current + _step <= _inclusiveEnd;
+            // Overflow aware comparison for forward and backward iterations.
+            return _step > 0
+                ? _current <= _inclusiveEnd
+                : _current >= _inclusiveEnd;
         }
 
         @Override
         public Integer next() {
-            int next = _current + _step;
-
             if (!hasNext()) {
                 String range = IntRange.this.toString();
-                throw new NoSuchElementException(next + " is not contained in range " + range);
+                throw new NoSuchElementException(_current + " is not contained in range " + range);
             }
-            _current = next;
+            int next = _current;
+            _current += _step;
 
-            return _current;
+            return next;
         }
     }
 }

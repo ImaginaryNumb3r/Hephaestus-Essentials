@@ -25,10 +25,10 @@ public class IntRangeTest {
         ListIterator<Integer> iter = range.randomIterator();
 
         for (int i = 0; i != 100; ++i) {
-            assertEquals(singletonRange.random(), val);
+            assertEquals(singletonRange.random(), val, 0.001);
         }
 
-        checkRandom(range::random);
+        checkRandom(range::randomInt);
         checkRandom(iter::next);
 
         // Check random iterator
@@ -66,39 +66,39 @@ public class IntRangeTest {
 
     @Test
     public void testCreation() {
-        final int start = 5;
-        final int end = 15;
+        final Integer start = 5;
+        final Integer  end = 15;
         final int size = 11; // | 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 | = 11
         // Test Sequential order.
         IntRange range = range(start, end);
 
-        assertEquals(start, range.start);
-        assertEquals(end, range.end);
+        assertEquals(start, range.getStart());
+        assertEquals(end, range.getEnd());
         assertEquals(size, range.size());
 
         range = forward(start, end);
 
-        assertEquals(start, range.start);
-        assertEquals(end, range.end);
+        assertEquals(start, range.getStart());
+        assertEquals(end, range.getEnd());
         assertEquals(size, range.size());
 
         range = forward(end, start);
 
-        assertEquals(start, range.start);
-        assertEquals(end, range.end);
+        assertEquals(start, range.getStart());
+        assertEquals(end, range.getEnd());
         assertEquals(size, range.size());
 
         // Test backwards order
         range = IntRange.backwards(start, end);
 
-        assertEquals(end, range.start);
-        assertEquals(start, range.end);
+        assertEquals(end, range.getStart());
+        assertEquals(start, range.getEnd());
         assertEquals(size, range.size());
 
         range = IntRange.backwards(end, start);
 
-        assertEquals(end, range.start);
-        assertEquals(start, range.end);
+        assertEquals(end, range.getStart());
+        assertEquals(start, range.getEnd());
         assertEquals(size, range.size());
     }
 
@@ -138,6 +138,7 @@ public class IntRangeTest {
 
             ++iterations;
         }
-        assertEquals("The range did not provide the correct amount of iterations", range.size(), iterations);
+
+        assertEquals("The range did not provide the correct amount of iterations (with direction: " + (forward ? "forward)" : "backwards)") , range.size(), iterations);
     }
 }

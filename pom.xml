@@ -4,17 +4,17 @@
 
     <groupId>com.github.ImaginaryNumb3r</groupId>
     <artifactId>hephaestus-essentials</artifactId>
-    <version>1.1</version>
+    <version>1.1.2</version>
     <packaging>jar</packaging>
     <description>TODO</description>
     <name>${project.groupId}:${project.artifactId}:${project.version}</name>
     <url>https://github.com/ImaginaryNumb3r/Hephaestus</url>
 
     <properties>
-        <requirements.version>5.1.2</requirements.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <requirements.version>5.1.2</requirements.version>
     </properties>
 
     <repositories>
@@ -77,7 +77,6 @@
                 <directory>test/resources</directory>
             </testResource>
         </testResources>
-
 
         <plugins>
             <plugin>
