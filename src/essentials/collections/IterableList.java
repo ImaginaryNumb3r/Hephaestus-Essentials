@@ -8,7 +8,6 @@ import java.util.ListIterator;
  * @author Patrick
  * @since 16.11.2016
  */
-// TODO: Move to Collections Framework
 public interface IterableList<T> extends Iterable<T> {
 
     /**
